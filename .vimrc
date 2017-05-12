@@ -8,6 +8,7 @@ set expandtab               " TABs are spaces
 
 " UI configuration
 set number                  " Show line numbers
+set ruler                   " Show line and column numbers in status bar
 set cursorline              " Highlight current line
 filetype indent on          " Load filetype-specific indent files
                             " ex. ~/.vim/indent/python.vim
@@ -22,3 +23,6 @@ set hlsearch                " Highlight matches
 " 'runtimepath' manager
 execute pathogen#infect()
 filetype plugin indent on   " Added to support pathogen
+
+" Key Mapings
+map <M-!> :let @/ = ""<CR>
