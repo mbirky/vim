@@ -13,7 +13,7 @@ rescue Errno::ENOENT, TypeError => e
 end
 
 vim_dir = '/Users/mbirky/.vim/'
-vim_sub_dirs = %w(indent colors)
+vim_sub_dirs = %w(indent colors syntax)
 
 vim_sub_dirs.each do |sub_dir|
   begin
