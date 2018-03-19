@@ -19,11 +19,6 @@ set showmatch               " Highlight matching [{()}]
 set incsearch               " Search as characters are entered
 set hlsearch                " Highlight matches
 
-" https://github.com/tpope/vim-pathogen
-" 'runtimepath' manager
-execute pathogen#infect()
-filetype plugin indent on   " Added to support pathogen
-
 " Set VIM to use the groovy syntax for any Jenkinsfile
 au BufNewFile,BufRead Jenkinsfile  setf groovy
 

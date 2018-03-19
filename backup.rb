@@ -6,14 +6,14 @@
 require 'fileutils'
 
 begin
-  FileUtils.cp('/Users/mbirky/.vimrc', '.')
+  FileUtils.cp('../.vimrc', '.')
 rescue Errno::ENOENT, TypeError => e
   puts e.message
   exit
 end
 
-vim_dir = '/Users/mbirky/.vim/'
-vim_sub_dirs = %w(indent colors syntax)
+vim_dir = '../.vim/'
+vim_sub_dirs = %w[indent colors syntax]
 
 vim_sub_dirs.each do |sub_dir|
   begin
